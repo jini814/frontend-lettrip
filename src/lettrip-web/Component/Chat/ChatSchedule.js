@@ -44,7 +44,6 @@ function ChatShedule({ enterChatRoom, onMeetUpId, ondeleteMeetUp }) {
       createMeetUp(meetUpForm)
         .then((response) => {
           onMeetUpId(response.data);
-          ondeleteMeetUp(response.data);
           console.log(response);
           window.alert("만남이 등록되었습니다.");
         })

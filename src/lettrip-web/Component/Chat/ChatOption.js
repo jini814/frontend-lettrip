@@ -74,6 +74,7 @@ function ChatOption({
       cancelMeetUp(meetUpId)
         .then((response) => {
           console.log(response);
+          alert("약속을 취소했습니다!");
           onMeetUpCancel(response.success);
           // 취소된 약속인 경우 메시지 표시
           if (canceled === true) {
